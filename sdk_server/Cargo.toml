@@ -1,0 +1,32 @@
+[package]
+name = "mecha_sdk_server"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/dhruveshb-mecha/mecha-sdk"
+homepage = "https://github.com/dhruveshb-mecha/mecha-sdk"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prost = "0.11.9"
+tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
+tonic = "0.9.2"
+log = "0.4.20"
+serde_yaml = "0.9.25"
+serde = { version = "1.0.164", features = ["derive"] }
+mecha_network_manager = { path = "../network_manager" }
+mecha_display_ctrl = { path = "../display_ctrl" }
+mecha_motion_sensor = { path = "../motion_sensor" }
+mecha_led_ctrl = { path = "../led_ctrl" }
+mecha_device_info = { path = "../device_info" }
+mecha_metrics = { path = "../metrics" }
+mecha_cpu_governor_ctrl = { path = "../cpu_governor_ctrl" }
+mecha_trustzone_ctrl = { path = "../trustzone_ctrl" }
+mecha_battery_ctrl = { path = "../battery_ctrl" }
+mecha_bluetooth_manager = {path ="../bluetooth_manager"}
+anyhow = { version = "1.0.75", features = ["backtrace"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+
+[build-dependencies]
+tonic-build = "0.9.2"

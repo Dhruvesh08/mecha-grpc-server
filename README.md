@@ -1,2 +1,2 @@
-# mecha-grpc-server
-mecha grpc sdk server
+# mecha-sdk
+Mecha Device SDK that provides interfaces to all hardware functions

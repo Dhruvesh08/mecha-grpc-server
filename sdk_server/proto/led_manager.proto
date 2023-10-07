@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package led_ctrl;
+
+service LedCtrlService {
+    rpc SetLed (LedColor) returns (Empty);
+    rpc ClearLed (LedColor) returns (Empty);
+}
+
+message LedColor {
+    enum Color {
+        Red = 0;
+        Green = 1;
+        Blue = 2;
+    }
+
+    Color color = 1;
+}
+
+message Empty {}

@@ -1,0 +1,11 @@
+[package]
+name = "mecha_metrics"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.75", features = ["backtrace"] }
+sysinfo = "0.29.10"
+tracing = "0.1"

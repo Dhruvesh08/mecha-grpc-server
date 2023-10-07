@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "network_manager",
+    "bluetooth_manager",
+    "motion_sensor",
+    "led_ctrl",
+    "display_ctrl",
+    "sdk_server",
+    "device_info",
+    "metrics",
+    "cpu_governor_ctrl",
+    "trustzone_ctrl",
+    "battery_ctrl",
+]
+
+[default.members]
+default = ["sdk_server"]
